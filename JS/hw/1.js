@@ -15,9 +15,9 @@
 
 const cel = Number.parseFloat(prompt("Enter the temperature in Celsius degrees"));
 if (cel) {
-    alert(`Цельсий: ${cel}, Фаренгейт: ${cels_to_fah(cel)}`);
+    alert(`Цельсий: ${cel}, Фаренгейт: ${+celsToFah(cel).toFixed(1)}`);
 }
 
-function cels_to_fah(degrees) {
-    return +((9 / 5) * degrees + 32).toFixed(1);
+function celsToFah(degrees) {
+    return (9 / 5) * degrees + 32;
 }
